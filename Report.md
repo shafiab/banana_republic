@@ -26,6 +26,7 @@ My implementaion pretty much follows the algorithm shown above and is adopted an
 - experience replay buffer size 1e5
 - discount factor gamma = 0.99
 - A soft update of target network was performed with tau = 1e-3
-- I
+- Unlike the paper, instead of training every timestep, I updated the model every 4 timesteps
+
 
 
