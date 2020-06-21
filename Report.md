@@ -11,5 +11,21 @@ Reinforcement Learning can be unstable when the action-value is represented as n
 ## DQN Implementation
 The DQN implementation is reproduced below (this is the same algorithm from the paper, I am using the version from the slides in Udacity lecture, which is nicely color coded for ease of reading).
 
+![algorithm](dqn_algorithm.png)
+
+My implementaion pretty much follows the algorithm shown above and is adopted and modified from the udacity example implementaton [here](https://github.com/udacity/deep-reinforcement-learning/blob/master/dqn/solution/dqn_agent.py). 
+
+## Model Hyperparameters
+- input = state_size
+- network = 64 x 64
+- output = action_size
+- Adam optimizer with learning rate 5e-4
+- relu activation in the intermediate layers
+- #epoch = 1
+- batch size = 64
+- experience replay buffer size 1e5
+- discount factor gamma = 0.99
+- A soft update of target network was performed with tau = 1e-3
+- I
 
 
