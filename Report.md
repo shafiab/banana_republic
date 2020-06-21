@@ -48,4 +48,4 @@ There are quite a few future improvement that can be done here:
 - Use [Double DQN](https://arxiv.org/abs/1509.06461) to address the issue of over-estimation of action values in DQN
 - Use [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952) to replay important transitions more frequently, and therefore learn more efficiently. 
 - Trying out the [Dueling DQN](https://arxiv.org/abs/1511.06581) architecure.
-- Finally, trying out the state of the art [rainbow](https://arxiv.org/abs/1710.02298) that combines all the extensions proposed from DQN to achieve the best result.
+- Finally, trying out the state of the art [Rainbow](https://arxiv.org/abs/1710.02298) that combines all the extensions proposed from DQN to achieve the best result.
