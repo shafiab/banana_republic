@@ -27,6 +27,21 @@ My implementaion pretty much follows the algorithm shown above and is adopted an
 - discount factor gamma = 0.99
 - A soft update of target network was performed with tau = 1e-3
 - Unlike the paper, instead of training every timestep, I updated the model every 4 timesteps
+- Exploration policy: epsilon greedy, with eps_start=1.0, eps_end=0.02, eps_decay=0.995
 
+## Reward Plot and Convergence
+A reward vs episode plot is presented below. The model training was pretty straight-forward. I tried different hyper-parameter configurations. However, the similar configurations as one of the homework assignment from the project worked pretty well and the model reached the target average reward (over 100 episodes) of at +13 in 377 episodes.
 
+[image_1]: reward_plot.png "Rewards vs. Episodes"
+![Trained Agents][image_1]
 
+## Saved Model
+- Saved model weights [here](https://github.com/shafiab/banana_republic/blob/master/checkpoint.pth)
+- The loads can be loaded by following the code in the [notebook](https://github.com/shafiab/banana_republic/blob/master/main.ipynb)
+- Since I trained the model using gpu on udacity workspace and then loaded the weight on my macbook to see the trained model at work, I faced an error. Some stack overflow search suggested to include `map_location={'cuda:0': 'cpu'}` while loading the models on cpu and it woked for me.
+```
+agent.qnetwork_local.load_state_dict(torch.load('checkpoint.pth', map_location={'cuda:0': 'cpu'}))
+```
+
+## Future Work
+There are quite a few future improvement that can be done here:
