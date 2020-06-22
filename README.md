@@ -1,10 +1,8 @@
 # Banana Republic
-A deep reinforcement learning agent trained on Unity ML Agents to collect bananas
+A deep reinforcement learning agent trained on Unity ML Agents to collect bananas.
 
 ## Introduction
-In this project, I trained a deep reinforcement learning agent using [DQN](https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf) (Deep Q-Networks) algorithm to collect yellow bananas while avoiding the blue bananas on Unity ML-agent. Unity Machine Learning Agents (ML-Agents) is an open-source Unity plugin that enables games and simulations to serve as environments for training intelligent agents. This particular setting is known as the Banana Collector Environment - a modified environment for this Udacity Deep RL project.
-
-Here is how the trained agent behave:
+In this project, I trained a deep reinforcement learning agent using [DQN](https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf) (Deep Q-Networks) algorithm to collect yellow bananas while avoiding the blue bananas on Unity ML-agent environment. Unity Machine Learning Agents (ML-Agents) is an open-source Unity plugin that enables games and simulations to serve as environments for training intelligent agents. This particular setting is known as the Banana Collector Environment - this is a modified environment for Udacity Deep RL project. Here is how the trained agent behave:
 
 [image_1]: banana_republic.gif "Trained Agents"
 ![Trained Agents][image_1]
@@ -15,10 +13,13 @@ In this environment, the agent navigate (and collect bananas) in a large, square
 
 The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around the agent's forward direction. Given this information, the agent has to learn how to best select actions. Four discrete actions are available, corresponding to:
 
-0 - move forward.
-1 - move backward.
-2 - turn left.
-3 - turn right.
+  0 - move forward.
+  
+  1 - move backward.
+  
+  2 - turn left.
+  
+  3 - turn right.
 
 The task is episodic. For this project, the environment is considered solved if the agent can get an average score of +13 over 100 consecutive episodes.
 
